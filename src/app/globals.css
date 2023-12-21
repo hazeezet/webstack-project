@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body, .custom-scroll {
+  @apply overflow-auto scroll-smooth scrollbar-none dark:scrollbar-thumb-slate-950 scrollbar-thumb-slate-400 md:scrollbar-thin scrollbar-track-slate-100 dark:scrollbar-track-transparent
+}
+
+body {
+  @apply pb-56
+}
