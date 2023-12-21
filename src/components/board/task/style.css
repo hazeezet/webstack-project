@@ -1,0 +1,108 @@
+.datepicker {
+  @apply w-max
+}
+.datepicker .react-date-picker__wrapper {
+  @apply hidden
+}
+.datepicker .react-date-picker {
+  @apply flex justify-center items-center
+}
+.datepicker .react-calendar {
+  @apply rounded-lg bg-transparent border-base-100
+}
+
+.datepicker .react-calendar__viewContainer {
+  @apply p-5
+}
+
+.datepicker .react-calendar__navigation {
+  @apply join w-full bg-transparent px-2 mb-0
+}
+
+.datepicker .react-calendar__navigation button {
+  @apply join-item btn btn-sm my-2 bg-base-100 hover:bg-base-100 focus:enabled:bg-base-100 disabled:cursor-not-allowed
+  enabled:hover:bg-base-100 text-current border-0 bg-transparent disabled:pointer-events-auto
+}
+
+.datepicker .react-calendar__month-view__weekdays abbr {
+  @apply no-underline
+}
+
+.datepicker .react-calendar__month-view__days__day--neighboringMonth{
+  @apply bg-base-200
+}
+
+.datepicker .react-calendar__month-view__days > :nth-child(-n+7) {
+  @apply border-t border-solid border-gray-500
+}
+
+.datepicker .react-calendar__month-view__days > :nth-child(7n+1) {
+  @apply border-l border-solid border-gray-500
+}
+
+.datepicker .react-calendar__month-view__days > :nth-child(7n+2),
+.datepicker .react-calendar__month-view__days > :nth-child(7n+4),
+.datepicker .react-calendar__month-view__days > :nth-child(7n+6) {
+  @apply border-x border-solid border-gray-500
+}
+
+.datepicker .react-calendar__month-view__days > :nth-child(7n+7) {
+  @apply border-r border-solid border-gray-500
+}
+
+.datepicker .react-calendar__month-view__days > :nth-child(n+8):nth-child(-n+14),
+.datepicker .react-calendar__month-view__days > :nth-child(n+22):nth-child(-n+28) {
+  @apply border-y border-solid border-gray-500
+}
+
+.datepicker .react-calendar__month-view__days > :nth-child(n+29):nth-child(-n+35),
+.datepicker .react-calendar__month-view__days > :nth-child(n+36):nth-child(-n+42) {
+  @apply border-b border-solid border-gray-500
+}
+
+.datepicker .react-calendar__month-view__days__day--weekend {
+  color: initial;
+}
+
+.datepicker .react-calendar__year-view__months__month {
+  @apply enabled:focus:bg-[#0cb4ec47] enabled:focus:text-slate-500 dark:enabled:hover:text-white rounded-lg
+}
+
+.datepicker .react-calendar__decade-view__years__year {
+  @apply enabled:hover:bg-base-100 enabled:hover:text-black dark:enabled:hover:text-white rounded-lg
+}
+
+.datepicker .react-calendar__century-view__decades__decade {
+  @apply  enabled:hover:bg-base-100 enabled:hover:text-black dark:enabled:hover:text-white rounded-lg
+}
+
+.datepicker .react-calendar__month-view__days button {
+  @apply hover:bg-base-100 hover:text-slate-500 dark:hover:text-white
+}
+
+.datepicker .react-calendar__tile {
+  @apply enabled:focus:bg-[#0cb4ec47] enabled:focus:text-slate-500 dark:enabled:focus:text-white enabled:hover:bg-base-100
+  disabled:bg-transparent disabled:hover:bg-transparent disabled:cursor-not-allowed disabled:text-gray-500
+}
+
+.datepicker .react-calendar__tile--now {
+  @apply bg-base-200 text-white enabled:focus:text-black
+}
+
+.datepicker .react-calendar--selectRange .react-calendar__tile--hover,
+.datepicker .react-calendar__tile--active {
+  @apply bg-[#0cb4ec47] text-slate-500
+}
+
+.datepicker .react-calendar--selectRange .react-calendar__tile--hover.react-calendar__tile--now {
+  @apply text-black dark:text-white
+}
+
+.datepicker .react-calendar__tile--hasActive {
+  @apply bg-base-100 enabled:hover:bg-base-100
+}
+
+.datepicker .react-date-picker__calendar {
+  position: inherit !important;
+  height: max-content !important;
+}
